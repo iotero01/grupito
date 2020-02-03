@@ -1,0 +1,18 @@
+
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:50 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:51 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:51 am SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. 
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
+3 February, 2020, 10:51 am SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':numOfertas' at line 1
