@@ -22,7 +22,7 @@ function desconectarBD($con){
 	return $con;
 }
 
-//Función para seleccionar todos los productos
+//Función para seleccionar todas las ofertas
 function seleccionarOfertasPortada($numOfertas){
 	$con = conectarBD();
 	
@@ -42,6 +42,51 @@ function seleccionarOfertasPortada($numOfertas){
 		exit;
 	}
 	return $rows;
+}
+
+//Función para seleccionar todas las ofertas
+function seleccionarTodasOfertas(){
+	$con = conectarBD();
+	
+	try{
+		$sql = "SELECT * FROM productos";
+		
+		$stmt = $con->prepare($sql);
+		
+		$stmt->execute();
+		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}catch(PDOException $e){
+		echo "Error: error al seleccionar los productos en la BD: ".$e->getMessage();
+		
+		file_put_contents("PDOErrors.txt", "\r\n".date('j F, Y, g:i a ').$e->getMessage(), FILE_APPEND);
+		exit;
+	}
+	return $rows;
+}
+
+//Función para seleccionar un producto
+function seleccionarProducto($idProducto){
+	$con = conectarBD();
+	
+	try{
+		
+		$sql = "SELECT * FROM productos WHERE idProducto=:idProducto";
+		
+		$stmt = $con->prepare($sql);
+		
+		$stmt->bindParam(':idProducto',$idProducto, PDO::PARAM_INT);
+		
+		$stmt->execute();
+		
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		
+	}catch(PDOException $e){
+		echo "Error: error al seleccionar un producto en la BD: ".$e->getMessage();
+		
+		file_put_contents("PDOErrors.txt", "\r\n".date('j F, Y, g:i a ').$e->getMessage(), FILE_APPEND);
+		exit;
+	}
+	return $row;
 }
 
 ?>
