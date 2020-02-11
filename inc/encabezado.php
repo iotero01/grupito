@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Mi grupito</title>
+    <title><?php echo $titulo; ?></title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
 
@@ -44,37 +44,65 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="./css/jumbotron.css" rel="stylesheet">
+	
+	<script src="https://kit.fontawesome.com/8b5a51d41f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" href="index.php">Mi Grupito</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  <li class="nav-item <?php if($pagina == 'index'){ echo "active"; } ?>">
+			<a class="nav-link" href="index.php">Inicio</a>
 		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+		  <li class="nav-item <?php if($pagina == 'productos'){ echo "active"; } ?>">
+			<a class="nav-link" href="productos.php">Ofertas</a>
 		  </li>
-		  <li class="nav-item">
-			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-		  </li>
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-			<div class="dropdown-menu" aria-labelledby="dropdown01">
-			  <a class="dropdown-item" href="#">Action</a>
-			  <a class="dropdown-item" href="#">Another action</a>
-			  <a class="dropdown-item" href="#">Something else here</a>
-			</div>
+		  <li class="nav-item <?php if($pagina == 'contacto'){ echo "active"; } ?>">
+			<a class="nav-link" href="contacto.php">Contacto</a>
 		  </li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-		  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
+		
+		<ul class="navbar-nav justify-content-end">
+			<li class="nav-item">
+				<?php if(empty($_SESSION['carrito'])){ ?>
+				<a href="carrito.php" class="nav-link">
+					<i class="fas fa-shopping-cart"></i> (0)
+				</a>
+				<?php } else{ ?>
+					<a href="carrito.php" class="nav-link">
+					<i class="fas fa-cart-plus"></i> (0)
+				</a>
+				<?php } ?>
+			</li>
+			
+			<?php
+				if(isset($_SESSION['usuarios'])){
+			?>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido, <?php echo $_SESSION['usuarios']; ?></a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+				  <a class="dropdown-item" href="misDatos.php">Mis datos</a>
+				  <a class="dropdown-item" href="misPedidos">Mis Pedidos</a>
+				  <a class="dropdown-item" href="Logout.php">Cerrar Sesión</a>
+				</div>
+			</li>
+			
+			<?php 
+			}
+			else{
+			?>
+			
+			<li class="nav-item">
+				<a href="login.php" class="btn btn-outline-success my-2 my-sm-0">Identifícate</a>
+			</li>
+			
+			<?php } ?>
+		</ul>
+		
 		</div>
 	</nav>

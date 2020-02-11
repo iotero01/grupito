@@ -1,12 +1,9 @@
 <?php require_once('bbdd/bbdd.php'); ?>
-<?php require_once('inc/encabezado.php'); ?>
 <?php require_once('inc/funciones.php'); ?>
-
 <?php 
 	$idProducto = recoge('id'); 
 	$producto = seleccionarProducto($idProducto);
 ?>
-
 <?php
 	$nombre = $producto['nombre'];
 	$introDescripcion = $producto['introDescripcion'];
@@ -15,6 +12,12 @@
 	$precioOferta = $producto['precioOferta'];
 	$precio = $producto['precio'];
 ?>
+<?php $pagina = "productos"; ?>
+<?php $titulo = "$nombre"; ?>
+<?php require_once('inc/encabezado.php'); ?>
+
+
+
 
 <main role="main">
 
@@ -33,7 +36,7 @@
 		<div class="col-6 mx-auto">
 			<p><?php echo $producto['descripcion']; ?></p>
 			<div class="col-12 mx-auto d-flex justify-content-center">
-				<a class="btn btn-success text-justify" href="carrito.php" >Añade al carrito</a>
+				<a href="procesarCarrito.php?id=<?php echo $idProducto; ?>&op=add" class="btn btn-success text-justify">Añadir al carrito</a>
 			</div>
 		</div>
 		

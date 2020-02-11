@@ -1,6 +1,8 @@
 <?php require_once('bbdd/bbdd.php'); ?>
-<?php require_once('inc/encabezado.php'); ?>
 <?php require_once('inc/funciones.php'); ?>
+<?php $pagina = "productos"; ?>
+<?php $titulo = "Todas nuestras ofertas"; ?>
+<?php require_once('inc/encabezado.php'); ?>
 <?php $productos = seleccionarTodasOfertas(); ?>
 
 
