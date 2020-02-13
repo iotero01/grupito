@@ -36,3 +36,7 @@
 11 February, 2020, 4:38 pm SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
 11 February, 2020, 4:38 pm SQLSTATE[HY000] [1049] Unknown database 'dbname'
 11 February, 2020, 4:38 pm SQLSTATE[HY000] [1049] Unknown database 'dbname'
+13 February, 2020, 2:01 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
+13 February, 2020, 2:01 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
+13 February, 2020, 2:05 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
+13 February, 2020, 2:05 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'

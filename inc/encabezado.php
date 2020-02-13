@@ -46,6 +46,24 @@
     <link href="./css/jumbotron.css" rel="stylesheet">
 	
 	<script src="https://kit.fontawesome.com/8b5a51d41f.js" crossorigin="anonymous"></script>
+<?php
+	if($pagina == "insertar"){
+?>
+	
+   <script src='https://www.google.com/recaptcha/api.js?render=<?php echo CLAVE_SITIO_WEB; ?>'></script>
+    <script>
+		grecaptcha.ready(function() {
+		grecaptcha.execute(<?php echo CLAVE_SITIO_WEB; ?>, {action: 'formulario'})
+		.then(function(token) {
+		var recaptchaResponse = document.getElementById('recaptchaResponse');
+		recaptchaResponse.value = token;
+		});});
+    </script>
+ <?php
+	}
+?> 
+  
+	
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

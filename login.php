@@ -1,22 +1,22 @@
 <?php session_start(); ?>
-<?php require_once('bbdd/bbdd.php'); ?>
-<?php require_once('inc/funciones.php'); ?>
-<?php $pagina = "productos"; ?>
+<?php require_once "inc/funciones.php"; ?>
+<?php require_once "bbdd/bbdd.php"; ?>
+<?php $pagina = "insertar"; ?>
 <?php $titulo = "Todas nuestras ofertas"; ?>
-<?php require_once('inc/encabezado.php'); ?> 
+<?php require_once "inc/encabezado.php"; ?> 
 
 <main role="main" class="container">
 			
 	<h1 class="mt-5" align="center">Inicio sesión</h1>
 
 	<?php
-		function inicioSesion($name,$password){
+		function inicioSesion($nombre, $password){
 	?>
 			
 			<form method="POST">
 				<div class="form-group"><strong>
-					<label for="name">Nombre</label>
-					<input type="text"  class="form-control" id="name" name="name" value="<?php echo $name; ?>" />
+					<label for="nombre">Nombre</label>
+					<input type="text"  class="form-control" id="nombre" name="nombre" value="<?php echo $nombre; ?>" />
 				</div>
 				
 				<div class="form-group">
@@ -34,33 +34,33 @@
 		}
 		if(empty($_REQUEST['entry'])){
 			$nombre = "";
-			$contrasena = "";
-			inicioSesion($nombre, $contrasena);
+			$password = "";
+			inicioSesion($nombre, $password);
 		}
 		else{
-			$nombre = recoge('name');
-			$contrasena = recoge('password');
+			$nombre = recoge('nombre');
+			$password = recoge('password');
 			$errores = "";
 		
 			if($nombre == ""){
 				$errores = $errores."<li>Tienes que añadir un nombre</li>";
 			}
-			if($contrasena == ""){
+			if($password == ""){
 				$errores = $errores."<li>Tienes que poner la contraseña</li>";
 			}
 			if($errores != ""){
 				echo "<h3>Errores:</h3> <ul> $errores </ul>";
-				inicioSesion($nombre, $contrasena);
+				inicioSesion($nombre, $password);
 			}
 			else{
-				$user = comprobarUsuario($nombre);
-				$verificar = password_verify($contrasena,$user['password']);
+				$usuario = comprobarUsuario($nombre);
+				$verificar = password_verify($password,$usuario['password']);
 				if(!$verificar){
 					echo "<p>Wrong user or password<p>";
 					echo "<a href='login.php'>Volver al login</a>";
 				}
 				else{
-					$_SESSION['name'] = $nombre;
+					$_SESSION['nombre'] = $nombre;
 					header("Location: index.php"); 
 				}
 			}

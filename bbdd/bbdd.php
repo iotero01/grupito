@@ -1,4 +1,4 @@
-<?php include "configuracion.php"; ?>
+<?php include_once "configuracion.php"; ?>
 
 <?php
 //Función para conectarnos a la BD
@@ -98,19 +98,21 @@ function seleccionarProducto($idProducto){
 
 
 //Función para insertar usuario
-function insertarUsuario($nombre, $password, $email, $telefono, $direccion){
-	$password = password_hash($password, PASSWORD_DEFAULT);
+function insertarUsuario($email, $password, $nombre, $apellidos, $telefono, $direccion){
+	
 	
 	$con = conectarBD();
 	
 	try{
-		$sql = "INSERT INTO usuarios (nombre, password, email, telefono, direccion) VALUES (:nombre, :password, :email, :telefono, :direccion)";
+		$sql = "INSERT INTO usuarios (email, password, nombre, apellidos, telefono, direccion) VALUES (:email, :password, :nombre, :apellidos, :telefono, :direccion)";
+		$password = password_hash($password, PASSWORD_DEFAULT);
 		
 		$stmt = $con->prepare($sql);
 		
-		$stmt->bindParam(':nombre',$nombre);
-		$stmt->bindParam(':password',$password);
 		$stmt->bindParam(':email',$email);
+		$stmt->bindParam(':password',$password);
+		$stmt->bindParam(':nombre',$nombre);
+		$stmt->bindParam(':apellidos',$apellidos);
 		$stmt->bindParam(':telefono',$telefono);		
 		$stmt->bindParam(':direccion',$direccion);
 
