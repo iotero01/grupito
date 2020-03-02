@@ -1,5 +1,8 @@
 <?php 
 	session_start();
+	if(empty($_SESSION['usuario'])){
+		header("Location: login.php?redirect=1");
+	}
 	require_once "bbdd/bbdd.php";
 	require_once "inc/funciones.php";
 	require_once "inc/encabezado.php";

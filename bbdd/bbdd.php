@@ -217,7 +217,7 @@ function comprobarUsuario($nombre){
 		$sql = "SELECT * FROM usuarios WHERE nombre=:nombre";
 		
 		$stmt = $con->prepare($sql);
-		
+
 		$stmt->bindParam(':nombre',$nombre);
 		
 		$stmt->execute();
@@ -298,6 +298,57 @@ function pagination($idUsuario){
 		exit;
 	}
 	return $stmt->rowCount();
+}
+
+
+
+
+//Función InsertarPedido
+function insertarPedido($idUsuario, $detallePedido, $total){
+	$con = conectarBD();
+	try{
+		$con -> beginTransaction();
+		$sql = "INSERT INTO pedidos (idUsuario, total) VALUES (:idUsuario, :total)";
+		
+		$sentencia = $con -> prepare($sql);
+		
+		$sentencia -> bindParam(":idUsuario", $idUsuario);
+		$sentencia -> bindParam(":total", $total);
+		
+		$sentencia -> execute();
+		
+		$idPedido = $con -> lastInsertId();
+		
+		foreach($detallePedido as $idProducto => $cantidad){
+			
+			$producto = seleccionarProducto($idProducto);
+			$precio = $producto['precioOferta'];
+			
+			$sql2 = "INSERT INTO detallePedido (idPedido, idProducto, cantidad, precio) VALUES (:idPedido, :idProducto, :cantidad, :precio)";
+			
+			$sentencia = $con -> prepare($sql2);
+		
+			$sentencia -> bindParam(":idPedido", $idPedido);
+			$sentencia -> bindParam(":idProducto", $idProducto);
+			$sentencia -> bindParam(":cantidad", $cantidad);
+			$sentencia -> bindParam(":precio", $precio);
+			
+			$sentencia -> execute();
+			
+		}
+		
+		$con -> commit();
+		
+	}catch(PDOException $e){
+		
+		$con -> rollback();
+		
+		echo "Error: error al insertar un pedido: ".$e->getMessage();
+		
+		file_put_contents("PDOErrors.txt", "\r\n".date('j F, Y, g:i a ').$e->getMessage(), FILE_APPEND);
+		exit;
+	}
+	return $idPedido();
 }
 
 

@@ -1,3 +1,8 @@
+<?php session_start();
+	if(empty($_SESSION['usuario'])){
+		header("Location: login.php?redirect=1");
+	}
+?> 
 <?php require_once('bbdd/bbdd.php'); ?>
 <?php require_once('inc/funciones.php'); ?>
 <?php 

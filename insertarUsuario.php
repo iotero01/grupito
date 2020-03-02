@@ -90,11 +90,11 @@
 		$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
 		$recaptcha = json_decode($recaptcha); 
 
-		if($recaptcha -> score < 0.7){
+		/*if($recaptcha -> score < 0.7){
 
 		  $errores = $errores."<li>Detectado robot</li>";
 
-		}
+		}*/
 		
 		
 		if($email == ""){

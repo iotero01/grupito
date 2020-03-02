@@ -93,20 +93,20 @@
 				</a>
 				<?php } else{ ?>
 					<a href="carrito.php" class="nav-link">
-					<i class="fas fa-cart-plus"></i> (0)
+					<i class="fas fa-cart-plus"></i>
 				</a>
 				<?php } ?>
 			</li>
 			
 			<?php
-				if(isset($_SESSION['usuarios'])){
+				if(isset($_SESSION['usuario'])){
 			?>
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido, <?php echo $_SESSION['usuarios']; ?></a>
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido, <?php echo $_SESSION['usuario']; ?></a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 				  <a class="dropdown-item" href="misDatos.php">Mis datos</a>
-				  <a class="dropdown-item" href="misPedidos">Mis Pedidos</a>
-				  <a class="dropdown-item" href="Logout.php">Cerrar Sesión</a>
+				  <a class="dropdown-item" href="misPedidos.php">Mis Pedidos</a>
+				  <a class="dropdown-item" href="logout.php">Cerrar Sesión</a>
 				</div>
 			</li>
 			

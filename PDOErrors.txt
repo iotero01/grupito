@@ -40,3 +40,71 @@
 13 February, 2020, 2:01 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
 13 February, 2020, 2:05 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
 13 February, 2020, 2:05 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gerardoelmagias@brujerosexy.com' for key 'email'
+27 February, 2020, 1:42 pm SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'asdf@movie.com' for key 'email'
+27 February, 2020, 2:09 pm SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+27 February, 2020, 2:09 pm SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+27 February, 2020, 2:09 pm SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+27 February, 2020, 2:09 pm SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+27 February, 2020, 2:10 pm SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:43 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:44 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:45 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:46 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:46 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:46 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:47 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:47 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:47 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:48 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:49 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:49 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:49 am SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`grupito`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`))
+2 March, 2020, 10:52 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:52 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:56 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:57 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:57 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:58 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null
+2 March, 2020, 10:59 am SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idUsuario' cannot be null

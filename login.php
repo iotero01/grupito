@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php require_once "inc/funciones.php"; ?>
 <?php require_once "bbdd/bbdd.php"; ?>
-<?php $pagina = "insertar"; ?>
-<?php $titulo = "Todas nuestras ofertas"; ?>
+<?php $titulo = "Inicio de sesión"; ?>
+<?php $pagina = "Inicio de sesión"; ?>
 <?php require_once "inc/encabezado.php"; ?> 
 
 <main role="main" class="container">
@@ -60,7 +60,11 @@
 					echo "<a href='login.php'>Volver al login</a>";
 				}
 				else{
-					$_SESSION['nombre'] = $nombre;
+					$_SESSION['usuario'] = $usuario['nombre'];
+					$_SESSION['email'] = $usuario['email'];
+					if($usuario['admin'] == 1){
+						$_SESSION['admin'] = $usuario['admin'];
+					}
 					header("Location: index.php"); 
 				}
 			}
